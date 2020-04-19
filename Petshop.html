@@ -64,11 +64,23 @@
       </div>
     </div>
   </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
+  <div class="navbar navbar-dark bg-dark shadow-sm fixed-top">
     <div class="container d-flex justify-content-between">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#dog">Cachorro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cat">Gato</a>
+        </li>
+        <br>
+        <li class="nav-item">
+          <a class="nav-link" href="#bird">Pássaro</a>
+        </li>
+      </ul>
       <a href="#" class="navbar-brand d-flex align-items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-        <strong>Petshop</strong>
+        <strong>Petshop - Oh My Dog</strong>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -82,11 +94,23 @@
   <section class="jumbotron text-center">
     <div class="container">
       <h1>Oh My Dog</h1>
-      <img src="https://static01.nyt.com/images/2019/06/17/science/17DOGS/17DOGS-superJumbo.jpg"   width="250px" height="200px">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="https://static01.nyt.com/images/2019/06/17/science/17DOGS/17DOGS-superJumbo.jpg" height="350px">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.99images.com/photos/wallpapers/animals-birds/dog-desktopandroid-iphone-desktop-hd-backgrounds-wallpapers-1080p-4k-70ukw.jpg?v=1577322093" height="350px">
+          </div>
+          <div class="carousel-item">
+            <img src="https://lh3.googleusercontent.com/proxy/EQiJz8KNSVRfgr8wcPUy9UGqyx7Iyt82p7fG6fW5ThL4UrqdNUsEHAvxb6cFiy4dYIjYy5C9KFh-X0y7Z7rRUoedzBUmHwvCyJ8ERQU4OC35WcGTI6e8qz9U8sDhqV4aD08s5rs-7RJxOsz2HlF0KrDjunQ5FCr8HU0iAG_L65C6Wg" height="350px">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <div class="album py-5 bg-light">
+  <div id="dog" class="album py-5 bg-light">
     <div class="container">
 
       <div class="row">
@@ -96,6 +120,9 @@
             <div class="card-body">
               <p class="bd-placeholder-img card-text">Pedigree</p>
               <p class="bd-placeholder-img card-text">R$ 120,50</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Comprar">
+                Comprar
+              </button>
             </div>
           </div>
         </div>
@@ -106,6 +133,9 @@
             <div class="card-body">
               <p class="bd-placeholder-img card-text">Magnus</p>
               <p class="bd-placeholder-img card-text">R$ 87,00</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Comprar">
+                Comprar
+              </button>
             </div>
           </div>
         </div>
@@ -116,6 +146,9 @@
             <div class="card-body">
               <p class="bd-placeholder-img card-text">Foster</p>
               <p class="bd-placeholder-img card-text">R$ 77,29</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Comprar">
+                Comprar
+              </button>
             </div>
           </div>
         </div>
@@ -126,6 +159,9 @@
             <div class="card-body">
               <p class="bd-placeholder-img card-text">Champ</p>
               <p class="bd-placeholder-img card-text">R$ 80,20</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Comprar">
+                Comprar
+              </button>
             </div>
           </div>
         </div>
@@ -136,6 +172,9 @@
             <div class="card-body">
               <p class="bd-placeholder-img card-text">Max</p>
               <p class="bd-placeholder-img card-text">R$ 79,99</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Comprar">
+                Comprar
+              </button>
             </div>
           </div>
         </div>
@@ -146,9 +185,113 @@
             <div class="card-body">
               <p class="bd-placeholder-img card-text">HotDog</p>
               <p class="bd-placeholder-img card-text">R$ 64,30</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Comprar">
+                Comprar
+              </button>
             </div>
           </div>
         </div>
+
+        <div class="col-md-4">
+          <div id="cat" class="card mb-4 shadow-sm">
+            <img src="https://www.petlove.com.br/images/products/202953/product/Ra%C3%A7%C3%A3o_Whiskas_Carne_para_Gatos_Adultos_-_10_1_Kg_31017729-4.jpg?1556481153" class="card-img-top">
+            <div class="card-body">
+              <p class="bd-placeholder-img card-text">Whiskas</p>
+              <p class="bd-placeholder-img card-text">R$ 129,99</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://static.carrefour.com.br/medias/sys_master/images/images/h3d/h5e/h00/h00/13666653831198.jpg" class="card-img-top">
+            <div class="card-body">
+              <p class="bd-placeholder-img card-text">Friskies</p>
+              <p class="bd-placeholder-img card-text">R$ 94,00 </p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://terrazoo-ecommerce-images.s3.amazonaws.com/uploads/2019/11/mock-spe5-degust%C3%A9-gato-adulto-600x800.jpg" class="card-img-top">
+            <div class="card-body">
+              <p class="bd-placeholder-img card-text">Degusté</p>
+              <p class="bd-placeholder-img card-text">R$ 89,00</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div id="bird" class="card mb-4 shadow-sm">
+            <img src="https://araujo.vteximg.com.br/arquivos/ids/1795057-1000-1000/7898329492124_1img-imagem-id-12049.jpg?v=634903517020600000" class="card-img-top">
+            <div class="card-body">
+              <p class="bd-placeholder-img card-text">Pássaro Forte</p>
+              <p class="bd-placeholder-img card-text">R$ 40,30 </p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://www.terradospassaros.com/loja/images/1384_grd.jpg" class="card-img-top">
+            <div class="card-body">
+              <p class="bd-placeholder-img card-text">Nativos</p>
+              <p class="bd-placeholder-img card-text">R$ 60,00 </p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://araujo.vteximg.com.br/arquivos/ids/3744828-1000-1000/7896048910028_1.jpg?v=636142784178900000" class="card-img-top">
+            <div class="card-body">
+              <p class="bd-placeholder-img card-text">Gorjeio</p>
+              <p class="bd-placeholder-img card-text">R$ 48,00 </p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="modal" id="Comprar" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Deseja finalizar a compra?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>O produto foi adicionado ao carrinho com sucesso!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Continuar comprando</button>
+                <button type="button" class="btn btn-primary">Ir para o carrinho</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      
+      
       </div>
     </div>
   </div>
